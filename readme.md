@@ -25,8 +25,6 @@ A modern, responsive portfolio website showcasing my work and skills.
 ```
 Portfolio/
 ├── index.html          # Main HTML file
-├── app.py             # Flask backend application
-├── requirements.txt   # Python dependencies
 ├── assets/
 │   ├── css/
 │   │   └── style.css  # Main stylesheet
