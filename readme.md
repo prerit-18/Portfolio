@@ -2,6 +2,9 @@
 
 A modern, responsive portfolio website showcasing my work and skills.
 
+Deployed using Vercel:
+https://prerit-portfolio-one-8.vercel.app/#
+
 ## Features
 
 - Responsive design that works on all devices
