@@ -2661,3 +2661,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 [data-theme="light"] .mapbox iframe {
   filter: none;
 }
+  .resume-download {
+    text-align: center;
+    padding: 2rem 0;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+  }
