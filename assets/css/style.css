@@ -2750,23 +2750,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 0;
   }
 }
-/* ✅ Trim bottom navbar on mobile */
+/* ✅ FORCE TRIMMED FLOATING NAVBAR ON MOBILE */
 @media (max-width: 768px) {
   .navbar {
-    width: calc(100% - 24px);   /* trims 12px from each side */
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 16px;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .navbar-list {
-    gap: 12px;
-  }
+    width: calc(100% - 32px) !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
 
-  .navbar-link {
-    padding: 14px 10px;
-    font-size: 12px;
+    bottom: 12px !important;
+    border-radius: 18px !important;
   }
 }
