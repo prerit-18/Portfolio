@@ -2671,12 +2671,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
+/* 🔧 MOBILE HARD RESET FIX */
 @media (max-width: 768px) {
-  .avatar-box,
-  .info-content .name,
-  .info-content .title {
-    animation: none !important;
+
+  .sidebar {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .avatar-box {
     transform: none !important;
     opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .info-content .name,
+  .info-content .title {
+    transform: none !important;
+    opacity: 1 !important;
+    animation: none !important;
   }
 }
