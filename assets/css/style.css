@@ -2760,3 +2760,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 10px;
   }
 }
+@media (max-width: 768px) {
+  .navbar-list {
+    gap: 12px;
+  }
+
+  .navbar-link {
+    padding: 14px 10px;
+    font-size: 12px;
+  }
+}
