@@ -2736,4 +2736,17 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: none !important; /* hide arrow */
   }
 }
-
+/* ✅ Fix duplicate email on mobile */
+@media (max-width: 768px) {
+  .contact-link .marquee-text:nth-child(2) {
+    display: none;
+  }
+}
+/* ✅ Fix resume button overlap on mobile */
+@media (max-width: 768px) {
+  .resume-download {
+    position: static !important;
+    margin-top: 16px;
+    padding: 0;
+  }
+}
