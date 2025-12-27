@@ -2762,3 +2762,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 18px !important;
   }
 }
+/* ✅ FORCE FLOATING TRIMMED NAVBAR ON MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed !important;
+
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+
+    width: auto !important;      /* IMPORTANT */
+    max-width: none !important;
+
+    border-radius: 18px !important;
+  }
+}
