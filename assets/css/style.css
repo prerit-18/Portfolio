@@ -2692,3 +2692,32 @@ textarea.form-input::-webkit-resizer { display: none; }
     animation: none !important;
   }
 }
+
+/* ✅ MOBILE SIDEBAR FIX */
+@media (max-width: 768px) {
+
+  .sidebar {
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .sidebar-info {
+    align-items: center;
+  }
+
+  .avatar-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar:hover,
+  article:hover {
+    transform: none !important;
+  }
+}
+
+
