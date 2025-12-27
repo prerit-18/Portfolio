@@ -2795,3 +2795,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 12px;
   }
 }
+@media (max-width: 768px) {
+  .navbar-link {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
