@@ -2762,18 +2762,36 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 18px !important;
   }
 }
-/* ✅ FORCE FLOATING TRIMMED NAVBAR ON MOBILE */
+/* ✅ REAL FIX — Floating trimmed navbar */
 @media (max-width: 768px) {
+
   .navbar {
-    position: fixed !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
 
-    left: 12px !important;
-    right: 12px !important;
-    bottom: 12px !important;
+  .navbar-inner {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
 
-    width: auto !important;      /* IMPORTANT */
-    max-width: none !important;
+    background: hsla(240, 1%, 17%, 0.85);
+    backdrop-filter: blur(12px);
 
-    border-radius: 18px !important;
+    border-radius: 18px;
+    border: 1px solid var(--jet);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  }
+
+  .navbar-list {
+    justify-content: space-around;
+    padding: 6px 8px;
+  }
+
+  .navbar-link {
+    padding: 12px 10px;
+    font-size: 12px;
   }
 }
