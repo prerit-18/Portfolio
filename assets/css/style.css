@@ -2670,3 +2670,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 100%;
 
   }
+
+@media (max-width: 768px) {
+  .avatar-box,
+  .info-content .name,
+  .info-content .title {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
