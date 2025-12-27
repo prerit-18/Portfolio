@@ -2719,5 +2719,21 @@ textarea.form-input::-webkit-resizer { display: none; }
     transform: none !important;
   }
 }
+/* ✅ SHOW CONTACT DETAILS BY DEFAULT ON MOBILE */
+@media (max-width: 768px) {
 
+  .sidebar {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .sidebar-info_more {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .info_more-btn {
+    display: none !important; /* hide arrow */
+  }
+}
 
