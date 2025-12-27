@@ -2750,3 +2750,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 0;
   }
 }
+/* ✅ Trim bottom navbar on mobile */
+@media (max-width: 768px) {
+  .navbar {
+    width: calc(100% - 24px);   /* trims 12px from each side */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+}
